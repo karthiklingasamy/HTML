@@ -1,6 +1,7 @@
 Extensiosn
 
 1. liveserver
+2. Prettier Code Formatter
 
 Short Cut
 
