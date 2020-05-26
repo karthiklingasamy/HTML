@@ -1,0 +1,7 @@
+Extensiosn
+
+1. liveserver
+
+Short Cut
+
+1. Press CTRL+Enter to go to next line from the middle of the tag
