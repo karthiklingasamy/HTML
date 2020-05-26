@@ -16,6 +16,13 @@ Customize the settings.json
   "prettier.singleQuote": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "vsicons.dontShowNewVersionMessage": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "javascriptreact",
+    "vue": "html",
+    "twig": "html"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
   "mssql.connections": [
     {
       "server": "192.168.171.40",
@@ -27,7 +34,9 @@ Customize the settings.json
       "savePassword": true,
       "profileName": "SIG"
     }
-  ]
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnType": true
 }
 
 
