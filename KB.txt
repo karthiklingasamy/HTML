@@ -44,3 +44,5 @@ Customize the settings.json
 Short Cut
 
 1. Press CTRL+Enter to go to next line from the middle of the tag
+2. Press Shift + Alt + Down Arrow to copy the line and past below
+3. Press Alt+Up Arrow/Down Arrow to move the line
