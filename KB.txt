@@ -89,6 +89,10 @@ git status
 Step 12:
 git diff
 
+Step 13:
+git remote add origin https://github.com/karthiklingasamy/Django.git
+git push -u origin master
+
 
 Django CMD
 ------------------------------------------------------------------------------------
@@ -142,3 +146,35 @@ posts = [
 ]
 
 Step 9: Template Inheretance 
+
+Step 10: Add Bootstrat starter template
+
+Step 11: Create Static Folde(create Folder:static)(Create Folder:blog)
+         blogapp--->static----->blog
+		 
+Step 12: Create main.css file 
+		 blogapp--->static----->blog---->main.css
+		 
+		 
+Step 13: Include main.css file into our base template
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}"> #---------->Note: The staic statement does is it generate the absolute url of the static folder and main/css
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+Step 14: Add URL route to link tag
+            <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+            <a class="nav-item nav-link" href="{% url 'blog-about'%}">About</a>
