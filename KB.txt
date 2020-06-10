@@ -1,3 +1,6 @@
+VS Code
+--------------------------------------------------------------------------------------------------
+
 Installed Extensiosn
 
 1. liveserver
@@ -44,5 +47,98 @@ Customize the settings.json
 Short Cut
 
 1. Press CTRL+Enter to go to next line from the middle of the tag
-2. Press Shift + Alt + Down Arrow to copy the line and past below
+2. Press Shift + Alt + Down Arrow to copy the line and past below 
+   Note: you can also use li*4
 3. Press Alt+Up Arrow/Down Arrow to move the line
+
+Git Hub
+----------------------------------------------------------------------------
+Step 1: Set the User Name
+git config --global user.name "karthik"
+
+Step 2: Set the email
+git config --global user.email "karthiklingasamay@gmail.com"
+
+Step 3: To view the list of parameters
+git config --list
+
+Step 4: To view only one parameter
+git config user.email
+
+Step 5: To see the help file
+git help commit
+
+Step 6:(Navigate to Tuna folder)
+git init
+
+Step 7:To add all the file to git
+git add .
+
+Step 8: To commit 
+git commit -m "This is our first commit"
+
+Step 9: To see all the commit log
+git log
+
+Step 10: To see only the commit from karthik
+git log --author="karthik"
+
+Step 11: Go get git status
+git status
+
+Step 12:
+git diff
+
+
+Django CMD
+------------------------------------------------------------------------------------
+Step 1: Create venv
+python -m venv xxxxxxx(For Example:django_env)
+
+Step 2: To install djang
+pip install django
+
+Step 3: To check the django version
+python -m django --version
+
+Step 4:Create Project
+django-admin
+
+Step 5: Create App
+python manage.py startapp blog
+
+Step 6: Create  Template
+blog---->templates----->blog------>templates.html
+
+Step 7: Register the app INSTALLED_APPS
+INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+Step 7: Disable HttpResponse and Render
+        Render function take three arguments(request,template,contex)
+
+Step 8:Create Dummy Database Call
+posts = [
+    {
+        'author': 'CoreyMS',
+        'title': 'Blog Past 1',
+        'content': 'First Post Content',
+        'date_posted': ' Auguset 27, 2018'
+    },
+
+    {
+        'author': 'Jane Dow',
+        'title': 'Blog Past 2',
+        'content': 'Second Post Content',
+        'date_posted': ' Auguset 28, 2018'
+    }
+]
+
+Step 9: Template Inheretance 
